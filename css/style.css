@@ -236,8 +236,6 @@ footer form input, footer form .btn {
 	height: 23px;
 	line-height: 23px;
 	border-radius: 3px;
-	padding: 0 7px;
-	margin-left:21px;
 	text-transform: uppercase;
 	font-size: .75em;
 }
@@ -246,6 +244,7 @@ footer form input{
 	border: 1px transparent solid;
 	width: 160px;
 	color: #6f6f6f;
+	padding:0 7px;
 }
 
 footer form .btn,
@@ -256,22 +255,165 @@ footer form .btn:hover {
 	width: 54px;
 	margin-top:-1px;
 	height: 25px;
+	margin-left:21px;
+	padding:0;
 }
 
 footer form .btn:hover {
 	background-color: #888;
 }
 
-#footer strong {
+footer strong {
 	line-height: 1.1em;
 	font-size:1.1em;
 }
 
+.small-only {
+	display: none;
+}
+
+.content .menu {
+    border-top: 1px #AAA solid;
+    border-bottom: 1px #AAA solid;
+    margin: 12px 0 28px;
+}
+
+.content .menu a {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.content .menu a:hover {
+	font-weight: bold;
+}
+
+.content .head .request {
+    padding-top: 25px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content .info, .content .overview, .content .contact {
+	border-top: 1px #222 solid;
+	padding: 25px 0;
+	margin:0;
+}
+
+.content h3 {
+	text-transform: uppercase;
+	font-size:1.7rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.content .info{
+	padding-bottom: 0;
+}
+
+.content .info .row {
+	margin-bottom: 24px;
+}
+
+.content .info span {
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 9px;
+	font-size:1.2rem;
+}
+
+.content .contact h3 {	
+	margin-bottom: 21px;
+}
+
+.content .contact .contact-info {
+	line-height:2.1rem;
+}
+
+.content .contact .backtolistings {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top:33px;
+	display: block;
+}
+
+.content .contact form .row div {
+	margin-top: 6px;
+	margin-bottom:7px;
+}
+
+.content .contact form input[type='text'],
+.content .contact form select{
+	height:25px;
+	line-height:25px;	
+	text-transform: uppercase;
+}
+
+.content .contact form input[type='text'],
+.content .contact form textarea,
+.content .contact form select{
+	border: 1px #6f6f6f solid;
+	border-radius: 3px;
+	width:100%;
+	padding:0 7px;
+	color:#6f6f6f;
+	font-size: 1rem;
+}
+
+.content .contact form label span {
+	color: #6f6f6f;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.content .contact form input[type='checkbox'] {
+	margin-top:2px;
+	width:10px;
+}
+
+.content .contact form textarea{
+	height:90px;
+	padding:5px 7px;
+}
+
+.content .contact button, 
+.content .contact button:hover {
+    border: 1px white solid;
+    color: white;
+    background-color: #6f6f6f;
+    width:56px;
+    height:27px;
+    padding: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.mg-md-1,.mg-md-2,.mg-md-3,.mg-md-4,.mg-md-5,
+.mg-md-6,.mg-md-7,.mg-md-8,.mg-md-9,.mg-md-10 {
+	padding:0 15px;
+	float:left;
+}
+
+.mg-md-1{width: 10%;}
+.mg-md-2{width: 20%;}
+.mg-md-3{width: 30%;}
+.mg-md-4{width: 40%;}
+.mg-md-5{width: 50%;}
+.mg-md-6{width: 60%;}
+.mg-md-7{width: 70%;}
+.mg-md-8{width: 80%;}
+.mg-md-9{width: 90%;}
+.mg-md-10{width:100%;}
+
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	
 	body {
 		padding-top: 120px;
+		padding-bottom:165px;
 	}
 
 	.navbar {
@@ -288,10 +430,10 @@ footer form .btn:hover {
 		line-height: 120px;
 	}
 
-	.navbar-collapse{
+	.navbar-collapse {
 		background-color: white;
 		position: absolute;
-		top:119px;
+		top:118px;
 		left:0;
 		right:0;
 		height: auto;
@@ -315,5 +457,96 @@ footer form .btn:hover {
 
 	.navbar-toggle .icon-bar+.icon-bar {
 		margin-top:9px;
+	}
+
+	#menu-navbar {
+		padding:0 15px 15px;
+	}
+
+	footer {
+		height: 165px;
+	}
+
+	footer form{
+		float:none;
+	}
+
+	footer form input, footer form .btn {
+		height: 48px;
+		line-height: 1em;
+		margin-left:0;
+		font-size: 1.75rem;
+		font-weight: bold;
+	}
+
+	footer form input{
+		margin-right: 30px;
+		width: calc(100% / 12 * 9 - 15px);
+	}
+
+	footer form .btn,
+	footer form .btn:hover {
+		width: calc(100% / 12 * 3 - 15px);
+		margin-top:-5px;
+		height: 50px;
+		padding:0;
+	}
+
+	footer strong {
+		font-size: 1.9rem;
+		display: block;
+		margin:30px 0;
+	}
+
+	.small-only {
+		display: block;
+		text-align: center;
+		line-height: 1em;
+		font-size: 1.3rem;
+		color: #6f6f6f;
+		padding:20px 0;
+		border-top:1px #6f6f6f solid;
+	}
+
+	.corp {
+		display: none;
+	}
+
+	.footer .social a, .footer .copyright img{
+		width:42px;
+	}
+
+	.footer .copyright img{
+		margin-bottom: 0;
+	}
+
+	.footer .copyright {
+		font-size: 1.7rem;
+	} 
+
+	.footer .social, .footer .copyright, .footer .remax {
+		margin-bottom: 10px;
+		height:auto;
+		white-space: nowrap;
+	}
+
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+	footer form input, footer form .btn {
+		font-size:1.3rem;
+	}
+	.footer .copyright {
+		font-size: 1.2rem;
+	} 
+
+	.footer .social a{
+		width:30px;
+	}
+
+	.small-only {
+		padding:15px 0;
+		font-size: 1.1rem;
 	}
 }
