@@ -1,0 +1,319 @@
+html,body {
+	font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+
+html {
+	height:100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 50px;
+}
+
+h1,h2,h3,h4,h5,h6{margin: 0;}
+
+img {
+	max-width: 100%;
+}
+
+*:focus {
+    outline: none;
+}
+
+.clearfix {
+	clear:both;
+}
+
+a,a:hover,a:active,a:focus,a:visited{
+	background-color: transparent !important;
+	color:#333 !important;
+}
+a:hover{
+	color:black !important;
+}
+
+/* -- NAV MENU -- */
+.navbar-brand,
+#menu-navbar {
+	padding:0;
+	height:auto;
+}
+
+.nav>li>a {
+	padding: 0 0 2px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:1em;
+}
+
+.nav>li>a.tree-toggle.open {
+	color:black;
+	border-bottom: 1px #717171 solid;
+	display: inline;
+}
+
+.nav>li>a.tree-toggle::after {
+	content: " +";
+}
+.nav>li>a.tree-toggle.open::after {
+	content: " -";
+}
+
+.nav .tree{
+	padding:13px 12px;
+	font-size: .85em;
+}
+
+.nav .tree>li>a {
+	padding-bottom: 0;
+}
+
+.nav>li>a:hover {
+	color: black;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-header {
+	float:none;
+	margin-bottom: 45px;
+}
+
+.navbar-brand img {
+	width: 100%;
+	max-width: 160px;
+	margin:0 auto;
+}
+
+/*-- END OF NAV MENY --*/
+
+.content .featured img, .content .property img {
+	width: 100%;
+}
+
+.content a img{
+	filter: grayscale(100);
+	transition: linear 200ms;
+}
+
+.content a img:hover{
+	filter: grayscale(0);
+}
+
+.content h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	margin:30px 0 22px;
+}
+
+.pagination {
+	float:left;
+	margin: 0 0 10px 0;
+}
+
+.pagination>li:first-child>a{
+	padding: 0 5px 0 0;
+}
+.pagination>li:last-child>a{
+	padding: 0 0 0 5px;
+}
+
+.pagination>li>a{
+	border:none;
+	background-color: transparent;
+	color:#222;
+	font-size: 1em;
+	padding:0 2px 0 3px;
+}
+
+.pagination>li>a.active{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.sorting {
+	float:right;
+	text-transform: uppercase;
+}
+.sorting>a {
+	font-weight: bold;
+}
+
+.sorting a:hover{
+	text-decoration:none;
+	cursor: pointer;
+}
+
+.sorting .caret {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #000;
+	height:10px;
+}
+
+.footer .sorting .caret {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #000;
+	border-top:none;
+	height:0;
+}
+
+.sorting .dropdown-menu {
+	border-radius: 0;
+	box-shadow: none;
+	min-width: auto;
+}
+
+.sorting .dropdown-menu a:hover{
+	text-shadow: 0px 0px 1px #999;
+}
+
+.content .property{
+	margin:15px 0;
+}
+
+.content .properties {
+	margin-bottom:8px;
+}
+
+.footer .social a {
+	display: inline-block;
+	width:20px;
+}
+
+.footer .social a:first-child {
+	margin-right:12px;
+}
+
+.footer .social,.footer .copyright,.footer .remax{
+	line-height:50px;
+	height:50px;
+	margin-top: 86px;
+	margin-bottom: 34px;
+}
+
+.footer .copyright {
+	text-align:center;
+	line-height: 1em;
+	font-size:10px;
+	color:#6f6f6f;
+}
+
+.footer .copyright img{
+	display: block;
+	width:30px;
+	margin:0 auto 8px;
+}
+
+.footer .remax {
+	text-align: right;
+}
+
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	line-height:50px;
+	height:50px;
+	background-color: #6f6f6f;
+	color:white;
+}
+
+footer form{
+	float:right;
+}
+
+footer form input, footer form .btn {
+	height: 23px;
+	line-height: 23px;
+	border-radius: 3px;
+	padding: 0 7px;
+	margin-left:21px;
+	text-transform: uppercase;
+	font-size: .75em;
+}
+
+footer form input{
+	border: 1px transparent solid;
+	width: 160px;
+	color: #6f6f6f;
+}
+
+footer form .btn,
+footer form .btn:hover {
+	border:1px white solid;
+	color: white;
+	background-color: inherit;
+	width: 54px;
+	margin-top:-1px;
+	height: 25px;
+}
+
+footer form .btn:hover {
+	background-color: #888;
+}
+
+#footer strong {
+	line-height: 1.1em;
+	font-size:1.1em;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+	
+	body {
+		padding-top: 120px;
+	}
+
+	.navbar {
+		height: 120px;
+		background-color: white;
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		z-index: 10;
+	}
+
+	.navbar .navbar-header {
+		line-height: 120px;
+	}
+
+	.navbar-collapse{
+		background-color: white;
+		position: absolute;
+		top:119px;
+		left:0;
+		right:0;
+		height: auto;
+	}
+
+	.navbar-brand {
+		float:none;
+		margin:45px auto;
+		display: block;
+	}
+
+	.navbar-toggle {
+		margin-top: 30px;
+	}
+
+	.navbar-toggle .icon-bar{
+		background-color: black;
+		height:9px;
+		width:50px;
+	}
+
+	.navbar-toggle .icon-bar+.icon-bar {
+		margin-top:9px;
+	}
+}
